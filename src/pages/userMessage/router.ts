@@ -11,7 +11,7 @@ export const routerMsg = {
     },
     {
       path: '/userMessage/settingSys/index',
-      name: '基本信息',
+      name: '系统设置',
       icon: 'smile',
       component: './userMessage/settingSys',
     },

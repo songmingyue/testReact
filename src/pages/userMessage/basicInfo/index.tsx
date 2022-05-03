@@ -1,8 +1,9 @@
 import React from 'react';
-import styles from './index.less';
+// import styles from './index.less';
+import { Input } from 'antd';
 
 const basicInfo: React.FC = () => {
-  return <div className={styles.pre}>121</div>;
+  return <Input placeholder="Basic usage" />;
 };
 
 export default basicInfo;

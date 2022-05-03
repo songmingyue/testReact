@@ -28,7 +28,7 @@ export default [
   },
   routerMsg,
   {
-    path: '/userMessage',
+    path: '/',
     redirect: '/userMessage/basicInfo/index',
   },
   {
