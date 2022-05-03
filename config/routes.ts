@@ -1,4 +1,5 @@
-﻿export default [
+﻿import { routerMsg } from '../src/pages/userMessage/router';
+export default [
   {
     path: '/user',
     layout: false,
@@ -20,32 +21,15 @@
     component: './Welcome',
   },
   {
-    path: '/admin',
-    name: 'admin',
-    icon: 'crown',
-    access: 'canAdmin',
-    component: './Admin',
-    routes: [
-      {
-        path: '/admin/sub-page',
-        name: 'sub-page',
-        icon: 'smile',
-        component: './Welcome',
-      },
-      {
-        component: './404',
-      },
-    ],
-  },
-  {
     name: 'list.table-list',
     icon: 'table',
     path: '/list',
     component: './TableList',
   },
+  routerMsg,
   {
-    path: '/',
-    redirect: '/welcome',
+    path: '/userMessage',
+    redirect: '/userMessage/basicInfo/index',
   },
   {
     component: './404',
