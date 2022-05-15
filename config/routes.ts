@@ -1,4 +1,4 @@
-﻿import { routerMsg } from '../src/pages/userMessage/router';
+﻿import { router } from '../src/pages/router';
 export default [
   {
     path: '/user',
@@ -14,19 +14,7 @@ export default [
       },
     ],
   },
-  {
-    path: '/welcome',
-    name: 'welcome',
-    icon: 'smile',
-    component: './Welcome',
-  },
-  {
-    name: 'list.table-list',
-    icon: 'table',
-    path: '/list',
-    component: './TableList',
-  },
-  routerMsg,
+  ...router,
   {
     path: '/',
     redirect: '/userMessage/basicInfo/index',
